@@ -75,9 +75,8 @@ TEMPLATES = [
     },
 ]
 
-BOOTSTRAP4 = { 'include_jquery': True } # new
 WSGI_APPLICATION = 'tweeter_app.wsgi.application'
-
+BOOTSTRAP4 = { 'include_jquery': True } # new
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
