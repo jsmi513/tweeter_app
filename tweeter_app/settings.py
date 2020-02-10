@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'eg=eacbm4=_ym*l_uxhje1%zi632_tj@8#^9y4@!^wk9f)gpf-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -75,8 +75,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tweeter_app.wsgi.application'
 BOOTSTRAP4 = { 'include_jquery': True } # new
+
+WSGI_APPLICATION = 'tweeter_app.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
