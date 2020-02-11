@@ -10,9 +10,11 @@ django = "*"
 python-dateutil = "*"
 gunicorn = "*"
 django-heroku = "*"
+psycopg2 = "==2.8.4"
+clang = "*"
 django-bootstrap4 = "*"
-bootstrap4 = "*"
 psycopg2-binary = "*"
+django-bootstrap-datepicker-plus = "*"
 
 [requires]
 python_version = "3.7"
