@@ -78,6 +78,13 @@ BOOTSTRAP4 = {'include_jquery': True}  # new
 LOGIN_REDIRECT_URL = 'home'  # new
 LOGOUT_REDIRECT_URL = 'home'  # new
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = os.getenv('SENDGRID_USER') # new
+EMAIL_HOST_PASSWORD = os.getenv('SENDGRID_PASSWORD') # new
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 WSGI_APPLICATION = 'tweeter_app.wsgi.application'
 
 
